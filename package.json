@@ -1,9 +1,12 @@
 {
-  "name": "MYLIB",
+  "name": "@qneyraud/eslint-config",
   "version": "1.0.0",
   "license": "ISC",
-  "description": "MYLIB is used to ...",
-  "keywords": [],
+  "description": "Personal eslint config for dev, prod, vue dev and vue prod projects",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "author": {
     "email": "quentin.neyraud@gmail.com",
     "name": "Quentin Neyraud"
@@ -20,39 +23,30 @@
       "name": "Quentin Neyraud"
     }
   ],
-  "homepage": "https://quentinneyraud.github.io/MYLIB/",
+  "homepage": "https://quentinneyraud.github.io/eslint-config/",
   "repository": {
     "type": "",
-    "url": "https://github.com/quentinneyraud/MYLIB/"
+    "url": "https://github.com/quentinneyraud/eslint-config/"
   },
   "bugs": {
     "email": "quentin.neyraud@gmail.com",
-    "url": "https://github.com/quentinneyraud/MYLIB/issues"
+    "url": "https://github.com/quentinneyraud/eslint-config/issues"
   },
-  "main": "umd/MYLIB.js",
-  "module": "esm/MYLIB.js",
-  "files": [
-    "esm/*",
-    "umd/*",
-    "cjs/*"
-  ],
   "scripts": {
-    "build": "rollup --config",
-    "lint": "eslint src/*",
-    "dev": "parcel example/index.html",
     "docs": "docsify serve ./docs",
-    "prepublish": "npm run lint && npm run build"
+    "prepublish": ""
   },
-  "devDependencies": {
-    "docsify-cli": "^4.3.0",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
+  "dependencies": {
+    "eslint-config-standard": "^12.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=5",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "parcel-bundler": "^1.12.3",
-    "rollup": "^1.15.6",
-    "rollup-plugin-terser": "^5.0.0"
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.3.0"
   }
 }
