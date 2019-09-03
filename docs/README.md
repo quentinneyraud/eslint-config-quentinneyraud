@@ -6,20 +6,42 @@ Personal eslint config for dev, prod, vue dev and vue prod projects
 
 ## Install
 
+You need to install the package and all the peer dependencies  
+
+#### Quick way:
+
+Yarn
+
 ```bash
-yarn add @qneyraud/eslint-config
+npx install-peerdeps @qneyraud/eslint-config --yarn --dev
+```
+
+Npm
+
+```bash
+npx install-peerdeps @qneyraud/eslint-config --dev
+```
+
+#### Long way:
+
+Yarn  
+```bash
+# Yarn
+yarn add @qneyraud/eslint-config --dev
+
+# Install all packages listed by
+yarn info "@qneyraud/eslint-config" peerDependencies
+```
+
+Npm  
+```bash
+npm install @qneyraud/eslint-config --dev
+
+# Install all packages listed by
+npm info "@qneyraud/eslint-config" peerDependencies
 ```
 
 ## Usage
-
-First, install missing peer dependencies.
-
-```bash
-# List peer dependencies
-yarn info @qneyraud/eslint-config peerDependencies
-
-# Install them
-```
 
 In development
 
