@@ -43,7 +43,11 @@ npm info "@qneyraud/eslint-config" peerDependencies
 
 ## Usage
 
-In development
+This package exports four ESLint configurations
+
+### Vanilla JS development
+
+For development, warnings on strict rules
 
 ```js
 // .eslintrc.js
@@ -52,7 +56,9 @@ module.exports = {
 }
 ```
 
-In production
+### Vanilla JS production
+
+For production, errors on strict rules
 
 ```js
 // .eslintrc.js
@@ -61,21 +67,25 @@ module.exports = {
 }
 ```
 
-In Vue/nuxt project development
+### Nuxt development
+
+For Nuxt projects in development, warnings on strict rules
 
 ```js
 // .eslintrc.js
 module.exports = {
-  "extends": "@qneyraud/eslint-config/vue-dev"
+  "extends": "@qneyraud/eslint-config/nuxt-dev"
 }
 ```
 
-In Vue/nuxt project production
+### Nuxt production
+
+For Nuxt projects in production, warnings on strict rules
 
 ```js
 // .eslintrc.js
 module.exports = {
-  "extends": "@qneyraud/eslint-config/vue-prod"
+  "extends": "@qneyraud/eslint-config/nuxt-prod"
 }
 ```
 
@@ -89,3 +99,5 @@ cd eslint-config
 # install dependencies
 yarn
 ```
+
+[Creating a Shareable Config](https://eslint.org/docs/developer-guide/shareable-configs)
