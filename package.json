@@ -1,6 +1,6 @@
 {
   "name": "@qneyraud/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "ISC",
   "description": "Personal eslint config for dev, prod, vue dev and vue prod projects",
   "keywords": [
@@ -40,7 +40,11 @@
     "eslint-config-standard": "^12.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=5"
+    "eslint": ">=5",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
   },
   "devDependencies": {
     "docsify-cli": "^4.3.0"
