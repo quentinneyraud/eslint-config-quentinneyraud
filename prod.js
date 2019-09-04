@@ -8,8 +8,8 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    'standard'
-  ].map(require.resolve),
+    'eslint-config-standard'
+  ],
   rules: {
     "no-unused-vars": ["error"],
     "no-undef": ["error"],
