@@ -2,8 +2,6 @@
 
 Personal eslint config for dev, prod, vue dev and vue prod projects
 
-> View doc [here](https://quentinneyraud.github.io/eslint-config)
-
 ## Install
 
 You need to install the package and all the peer dependencies  
