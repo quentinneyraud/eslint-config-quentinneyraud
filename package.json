@@ -35,7 +35,9 @@
   "scripts": {
     "docs": "docsify serve ./docs",
     "lint:vanilla": "eslint examples/vanilla",
+    "lint:vanilla:prod": "NODE_ENV=production eslint examples/vanilla",
     "lint:nuxt": "eslint examples/nuxt",
+    "lint:nuxt:prod": "NODE_ENV=production eslint examples/nuxt",
     "prepublish": ""
   },
   "dependencies": {

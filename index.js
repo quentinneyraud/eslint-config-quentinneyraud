@@ -1,1 +1,1 @@
-module.exports = require('./dev.js')
+module.exports = require('./vanilla.js')

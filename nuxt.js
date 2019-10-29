@@ -1,3 +1,5 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   root: true,
   env: {
@@ -10,8 +12,5 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended'
-  ],
-  // add your custom rules here
-  rules: {
-  }
+  ]
 }

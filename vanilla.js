@@ -1,3 +1,5 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   root: true,
   env: {
@@ -11,9 +13,11 @@ module.exports = {
     'eslint-config-standard'
   ],
   rules: {
-    "no-unused-vars": ["error"],
+    "no-unused-vars": (isProd) ? ["error"] : ["warn"],
     "no-undef": ["error"],
     "no-return-assign": 0,
-    "no-console": ["error"]
+    "no-console": (isProd) ? ["error"] : ["warn"],
+    "no-var": ["error"],
+    "prefer-const": ["error"]
   }
 }

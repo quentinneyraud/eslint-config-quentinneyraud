@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../dev.js']
+  extends: ['../../vanilla.js']
 }

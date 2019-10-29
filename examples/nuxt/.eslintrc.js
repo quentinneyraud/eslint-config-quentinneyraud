@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../../nuxt-dev.js']
+  extends: ['../../nuxt.js']
 }

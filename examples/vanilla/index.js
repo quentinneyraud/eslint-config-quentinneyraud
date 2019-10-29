@@ -1,4 +1,4 @@
-var test = 'OK'
+let test = 'OK'
 
 console.log(test)
 
