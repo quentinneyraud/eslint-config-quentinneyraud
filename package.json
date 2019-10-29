@@ -34,7 +34,8 @@
   },
   "scripts": {
     "docs": "docsify serve ./docs",
-    "lint": "eslint examples/dev",
+    "lint:vanilla": "eslint examples/vanilla",
+    "lint:nuxt": "eslint examples/nuxt",
     "prepublish": ""
   },
   "dependencies": {

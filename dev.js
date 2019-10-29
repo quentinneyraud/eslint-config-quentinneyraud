@@ -14,6 +14,7 @@ module.exports = {
     "no-unused-vars": ["warn"],
     "no-undef": ["error"],
     "no-return-assign": 0,
-    "no-console": ["warn"]
+    "no-console": ["warn"],
+    "prefer-const": ["error"]
   }
 }
