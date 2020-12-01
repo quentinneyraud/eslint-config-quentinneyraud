@@ -12,5 +12,22 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended'
-  ]
+  ],
+  rules: {
+    curly: ['error', 'multi-line'],
+    'no-unused-vars': isProd ? ['error'] : ['warn'],
+    'vue/no-v-html': 0,
+    'arrow-parens': ['error', 'as-needed'],
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false }],
+    'template-curly-spacing': 0,
+    indent: ['error', 2, {
+      ignoredNodes: ['TemplateLiteral']
+    }],
+    'vue/custom-event-name-casing': 0,
+    'vue/no-lone-template': 0,
+    'no-console': (isProd) ? ['error'] : ['warn'],
+    'no-undef': ['error'],
+    'no-var': ['error'],
+    'prefer-const': ['error']
+  }
 }
