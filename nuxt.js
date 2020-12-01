@@ -15,7 +15,11 @@ module.exports = {
   ],
   rules: {
     curly: ['error', 'multi-line'],
-    'no-unused-vars': isProd ? ['error'] : ['warn'],
+    'no-unused-vars': isProd ? ['error', {
+      argsIgnorePattern: '^_'
+    }] : ['warn', {
+      argsIgnorePattern: '^_'
+    }],
     'vue/no-v-html': 0,
     'arrow-parens': ['error', 'as-needed'],
     'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false }],
@@ -28,6 +32,6 @@ module.exports = {
     'no-console': (isProd) ? ['error'] : ['warn'],
     'no-undef': ['error'],
     'no-var': ['error'],
-    'prefer-const': ['error']
+    'prefer-const': ['error', { destructuring: 'all' }],
   }
 }
