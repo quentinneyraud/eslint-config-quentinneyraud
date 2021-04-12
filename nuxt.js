@@ -35,7 +35,10 @@ const config = {
     'no-var': ['error'],
     'prefer-const': ['error', {
       destructuring: 'all'
-     }]
+     }],
+    'vue/multiline-html-element-content-newline': ['error', {
+      allowEmptyLines: true
+    }]
   }
 }
 
