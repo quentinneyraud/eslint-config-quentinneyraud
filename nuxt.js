@@ -1,5 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
+const warnToErrorLevel = isProd ? 'error' : 'warning'
+
 const config = {
   root: true,
   env: {
@@ -13,9 +15,12 @@ const config = {
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
+  settings: {
+    'import/resolver': 'nuxt'
+  },
   rules: {
     curly: ['error', 'multi-line'],
-    'no-unused-vars': ['warn', {
+    'no-unused-vars': [warnToErrorLevel, {
       argsIgnorePattern: '^_',
       varsIgnorePattern: '^_'
     }],
@@ -30,7 +35,7 @@ const config = {
     }],
     'vue/custom-event-name-casing': 0,
     'vue/no-lone-template': 0,
-    'no-console': ['warn'],
+    'no-console': [warnToErrorLevel],
     'no-undef': ['error'],
     'no-var': ['error'],
     'prefer-const': ['error', {
@@ -38,18 +43,14 @@ const config = {
      }],
     'vue/multiline-html-element-content-newline': ['error', {
       allowEmptyLines: true
-    }]
+    }],
+    'import/no-unresolved': [
+      'error',
+      {
+        caseSensitive: true
+      }
+    ]
   }
 }
-
-if (process.env.NODE_ENV === 'production') {
-  config.rules['no-unused-vars'] = ['error', {
-    argsIgnorePattern: '^_',
-    varsIgnorePattern: '^_'
-  }]
-
-  config.rules['no-console'] = ['error']
-}
-
 
 module.exports = config
