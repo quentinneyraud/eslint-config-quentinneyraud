@@ -1,6 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
 
-const warnToErrorLevel = isProd ? 'error' : 'warning'
+const warnToErrorLevel = isProd ? 'error' : 'warn'
 
 const config = {
   root: true,
